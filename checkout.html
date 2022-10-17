@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shop</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="assets/css/reboot.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Raleway&family=Roboto:wght@100;400;700&family=Source+Sans+Pro:wght@200;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <main>
+        <header class="page-header">
+            <h1 class="logo">Watch Shop</h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="login.html">Giriş Yap</a></li>
+                    <li><a href="register.html">Kayıt Ol</a></li>
+                    <li><a href="checkout.html">Ödeme Yap</a></li>
+                    <li><a href="success.html">Ödeme Başarılı</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content">
+            <h1 class="content-heading">Ödeme Yap</h1>
+            <form>
+
+                <div class="checkout">
+                    <div class="knowledge">
+                        <h3 class="personal">Kişi Bilgileri</h3>
+                        <div>
+                            <label class="fname">İsim:</label>
+                            <input type="text" id="fname" name="fname" placeholder="İsim" required>
+                        </div>
+                        <div>
+                            <label class="sname">Soyisim:</label>
+                            <input type="text" id="sname" name="sname" placeholder="Soyisim" required>
+                        </div>
+                        <div>
+                            <label for="email">E-posta:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+
+                    </div>
+
+                    <div class="address">
+                        <label for="address">Adres:</label><br>
+                        <textarea id="address" placeholder="Cadde, Sokak ve Bina No" required></textarea>
+
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sameAddress" name="sameAddress" />
+                        <label for="sameAddress">Fatura adresim ile teslimat adresim aynı</label><br>
+                        <input type="checkbox" id="saveMyInfo" name="saveMyInfo" />
+                        <label for="saveMyInfo">Bilgilerimi bir dahaki sefer için kaydet</label>
+                    </div>
+
+
+                    <div class="pay">
+                        <h3>Ödeme Bilgileri</h3>
+                        <label>Ödeme Yöntemi:</label><br>
+
+                        <div>
+                            <label for="visapayment">Visa Payment</label>
+                            <input type="radio" name="cardType" id="visapayment">
+                        </div>
+
+                        <div>
+                            <label for="paypal">PayPal</label>
+                            <input type="radio" name="cardType" id="paypal">
+                        </div>
+
+                        <div>
+                            <label for="mastercard">Master Card</label>
+                            <input type="radio" name="cardType" id="mastercard">
+                        </div>
+                    </div>
+
+                    <div class="card-knowledge">
+                        <h4>Kart Bilgileri:</h4>
+                        <label for="cardNumber">Kart Numarası:</label>
+                        <input type="text" min="16" pattern="[0-9]{16,16}" id="cardNumber" required><br>
+
+                        <label for="cardHolderName">Kart Sahibi:</label>
+                        <input type="text" id="cardHolderName" placeholder="Kart üzerindeki tam isim" required><br>
+
+                        <label for="expDate">Son kullanma tarihi:</label>
+                        <input type="month" id="expDate" min="2022-10" required><br>
+
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" pattern="[0-9]{3,3}" required><br>
+                    </div>
+
+                    <input class="submit-button" type="submit" value="Ödeme Yap">
+
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+</body>

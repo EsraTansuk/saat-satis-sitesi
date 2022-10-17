@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shop</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="assets/css/reboot.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Raleway&family=Roboto:wght@100;400;700&family=Source+Sans+Pro:wght@200;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <main>
+        <header class="page-header">
+            <h1 class="logo">Watch Shop</h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="login.html">Giriş Yap</a></li>
+                    <li><a href="register.html">Kayıt Ol</a></li>
+                    <li><a href="checkout.html">Ödeme Yap</a></li>
+                    <li><a href="success.html">Ödeme Başarılı</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content">
+            <h1 class="content-heading">Kayıt Ol</h1>
+            <form class="form_wrapper">
+                <div class="form_container">
+                    <div class="title_container">
+                        <h2>Kayıt Formu</h2>
+                    </div>
+                    <div>
+                        <label for="email">E-Posta:</label>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="password">Şifre:</label>
+                        <input type="password" id="password" name="password" required><br>
+
+                        <label for="password2">Şifre Tekrar:</label>
+                        <input type="password2" id="password2" name="password2" required> <br>
+
+                        <label for="fname">İsim:</label>
+                        <input type="text" id="fname" name="fname" required><br>
+
+                        <label for="sname">Soyisim:</label>
+                        <input type="text" id="sname" name="sname" required><br>
+
+                        <input type="radio" name="gender" >
+                        <label>Erkek</label>
+                        <input type="radio" name="gender" >
+                        <label>Kadın</label><br>
+                        
+
+                        <select id="country">
+                            <option selected disabled>Ülkenizi seçiniz</option>
+                            <option value="turkey">Türkiye</option>
+                            <option value="england">İngiltere</option>
+                            <option value="australia">Avustralya</option>
+                            <option value="canada">Kanada</option>
+                        </select><br><br>
+
+                        <input type="checkbox" id="agree" name="agree">
+                        <label for="agree">Bütün şartlara katılıyorum.</label><br>
+
+                        <input type="checkbox" id="news" name="news">
+                        <label for="news">Kampanyalardan haberdar olmak istiyorum.</label><br>
+
+                        <button class="register-btn">Kayıt Ol</button>
+
+                        
+                    </div>
+
+                </div>
+
+            </form>
+           
+        </section>
+
+    </main>
+
+</body>
